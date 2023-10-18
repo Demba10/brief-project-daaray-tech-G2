@@ -1,0 +1,21 @@
+:root {
+    --baseColor : #E45923;
+    --secondColor : #F1DAA6;
+    --zeus : #231F1B;
+    --poussierEtoile : #9D9D9C;
+    --titreSectionSize : 36px;
+    --titreSectionGraisse : 700;
+    --defaulFontSize : 16px;
+}
+
+*{
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: var(--defaulFontSize);
+}
+
+
