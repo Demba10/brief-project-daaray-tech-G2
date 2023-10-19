@@ -1,0 +1,30 @@
+.carte
+{
+    padding: 20px;
+    margin: 20px;
+    margin-left: 78px;
+}
+.carte img
+{
+    width: 150px;
+    height: 150px;
+    margin-left: 76px;
+}
+.card-body
+{
+    background-color: var(--secondColor);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+}
+.card-body h5
+{
+    text-align: center;
+    font-weight: var(--titreSectionGraisse);
+}
+.card
+{
+    width: 80%;
+    border:1px solid black;
+    border-radius: 25px;
+}
