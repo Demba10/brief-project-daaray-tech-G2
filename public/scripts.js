@@ -9,7 +9,7 @@ var eltsUri = uri.split('/');
 //creer le chemin racine en recuperant que le 8 premiere element et ajouter de slash entre eux
 var root = eltsUri.slice(2, 7).join('/') + '/';
 
-console.log(root);
+// console.log(basePath);
 
 
 //injecter le code du header
@@ -19,7 +19,7 @@ header.innerHTML = `
     </div>
     <header class="header">
 
-        <a href="#" class="logo"><img src="../public/images/logoTest.png" alt=""></a>
+        <a href="#" class="logo"><img src="${root}/public/images/logoTest.png" alt=""></a>
 
         <input type="checkbox" id="check">
         <label for="check" class="icon">
@@ -28,11 +28,11 @@ header.innerHTML = `
         </label>
 
         <nav class="navBar">
-            <a href="${root}accueil/accueil.html" id="accueilLink">Acceuil</a>
-            <a href="${root}formations/formations/formations.html" id="formationsLink">Formation</a>
-            <a href="${root}articles/arcticles.html" id="articlesLink">Articles</a>
-            <a href="${root}temoignages/temoignages.html" id="temoignagesLink">Temoignages</a>
-            <a href="${root}contact/contact.html" id="contactLink">Contact</a>
+            <a href="${root}/accueil/accueil.html" id="accueilLink">Acceuil</a>
+            <a href="${root}/formations/formations/formations.html" id="formationsLink">Formation</a>
+            <a href="${root}/articles/arcticles.html" id="articlesLink">Articles</a>
+            <a href="${root}/temoignages/temoignages.html" id="temoignagesLink">Temoignages</a>
+            <a href="${root}/contact/contact.html" id="contactLink">Contact</a>
             <div class="search">
                 <button><i class="bi bi-search"></i></button>
                 <input type="search" name="search" id="search" placeholder="Que voulez-vous savoir ?">
@@ -53,7 +53,7 @@ footer.innerHTML = `
     <div class="footerTopLeft">
         <div class="socialMedia">
             <div class="logoFooter">
-                <a href="${root}accueil/accueil.html"><img src="${root}public/images/logo.png" alt=""></a>
+                <a href="${root}/accueil/accueil.html"><img src="${root}/public/images/logo.png" alt=""></a>
             </div>
             <div class="socialMediaIcon">
                 <a href="#"><i class="bi bi-github" style="color:rgb(130, 39, 248)"></i></a>
@@ -64,18 +64,18 @@ footer.innerHTML = `
         </div>
         <div class="usefulLink">
             <div class="links">
-                <a href="${root}accueil/accueil.html">Acceuil</a>
-                <a href="${root}articles/arcticles.html">Articles</a>
-                <a href="${root}formations/formations/formations.html">Formations</a>
-                <a href="${root}temoignages/temoignages.html">Temoignages</a>
+                <a href="${root}/accueil/accueil.html">Acceuil</a>
+                <a href="${root}/articles/arcticles.html">Articles</a>
+                <a href="${root}/formations/formations/formations.html">Formations</a>
+                <a href="${root}/temoignages/temoignages.html">Temoignages</a>
             </div>
         </div>
         <div class="legal">
             <div class="links">
-                <a href="${root}contact/contact.html">Contact</a>
-                <a href="${root}conditions_utilisation/condion_utilisation.html">Condition d'utilisation</a>
-                <a href="${root}mentions_lesgales/mentions_legales.html">Mention legal</a>
-                <a href="${root}utilisations_cookies/cookies.html">Utilisation des cookies</a>
+                <a href="${root}/contact/contact.html">Contact</a>
+                <a href="${root}/conditions_utilisation/condion_utilisation.html">Condition d'utilisation</a>
+                <a href="${root}/mentions_lesgales/mentions_legales.html">Mention legal</a>
+                <a href="${root}/utilisations_cookies/cookies.html">Utilisation des cookies</a>
             </div>
         </div>
     </div>
