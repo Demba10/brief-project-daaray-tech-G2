@@ -1,20 +1,17 @@
-*
-{
-    padding: 2px;
-    margin: 2px;
-}
 .mentionslegales 
 {
     background-color:var(--secondColor);
+    margin: 15px;
+    padding: 15px;
 }
 .mentionslegalesh1
 {
-    margin-left:30px;
+    margin-left:70px;
 }
 .mentionslegalesh1 hr
 {
     background-color:#E45923 !important ;
-    border: 1px solid #E45923 !important;
+    border: 2px solid #E45923 !important;
     width: 6%;
     margin-top:-7px;
     margin-left:5px;
@@ -28,6 +25,8 @@
 {
    display: flex;
    font-size: 18px;
+   margin: 15px;
+    padding: 15px;
 }
 .img1
 {
