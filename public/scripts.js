@@ -2,8 +2,15 @@
 const header = document.getElementById('header');
 const footer = document.getElementById('footer');
 
-//definir un chemin d'enter de notre application
-const root = 'file:///D:/projet/simplon/brief-project-daaray-tech-G2';
+//recuperer le chemin du fichier
+const uri = document.baseURI;
+//recuperer les element apres chaque slash et creer un tableau
+var eltsUri = uri.split('/');
+//creer le chemin racine en recuperant que le 8 premiere element et ajouter de slash entre eux
+var root = eltsUri.slice(2, 7).join('/') + '/';
+
+// console.log(basePath);
+
 
 //injecter le code du header
 header.innerHTML = `
