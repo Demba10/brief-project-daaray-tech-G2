@@ -1,17 +1,22 @@
 .banier
 {
-  height: 550px;
+  padding-top:90px;
+  height: 650px;
   width: 100%;
-  background-size: cover;
-  background-position: center;
 }
 .banierh1
 {
   background-color: white;
-  height: 100px;
+  background-size: cover;
+  border: 6px solid var(--baseColor);
   width: 100%;
-  color: var(--basecolor);
-
+  padding-top: 59.3px;
+  padding-bottom: 59.3px;
+  color: var(--baseColor);
+  position: relative;
+  top: -364.4px;
+  text-align: center;
+  text-shadow:2px 2px 2px 2px white;
 }
 .carte
 {
@@ -42,4 +47,6 @@
     width: 80%;
     border:1px solid black;
     border-radius: 25px;
+    box-shadow: 6px 8px 16px 6px rgba(0,0,0,0.2);
+
 }
