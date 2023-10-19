@@ -16,5 +16,3 @@ f1.addEventListener('click', function () {
     f1.style.color = '#E45923';
     f2.style.color = 'black';
 });
-
-alert(document.body.baseURI);

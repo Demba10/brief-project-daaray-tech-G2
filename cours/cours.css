@@ -207,6 +207,14 @@ body {
     position: relative;
     left: -4%;
 }
+.all-comment-sites {
+    width: 90%;
+    height: 90vh;
+    background-color: white;
+    border-radius: 20px;
+    position: absolute;
+    top: 30px;
+}
 @media screen and (max-width: 575.98px) {
     body {
         overflow-x: hidden;
