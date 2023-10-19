@@ -32,7 +32,7 @@ header.innerHTML = `
 
         <nav class="navBar">
             <a href="${root}/accueil/accueil.html" id="accueilLink">Acceuil</a>
-            <a href="${root}/formations/formations/formations.html" id="formationsLink">Formation</a>
+            <a href="${root}/formations/formations.html" id="formationsLink">Formation</a>
             <a href="${root}/articles/arcticles.html" id="articlesLink">Articles</a>
             <a href="${root}/temoignages/temoignages.html" id="temoignagesLink">Temoignages</a>
             <a href="${root}/contact/contact.html" id="contactLink">Contact</a>
@@ -67,7 +67,7 @@ footer.innerHTML = `
             <div class="links">
                 <a href="${root}/accueil/accueil.html">Acceuil</a>
                 <a href="${root}/articles/arcticles.html">Articles</a>
-                <a href="${root}/formations/formations/formations.html">Formations</a>
+                <a href="${root}/formations/formations.html">Formations</a>
                 <a href="${root}/temoignages/temoignages.html">Temoignages</a>
             </div>
         </div>
