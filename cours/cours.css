@@ -24,6 +24,7 @@ body {
     border-radius: 12px;
     font-size: 0.8em;
     position: relative;
+    z-index: 12;
     top: -3px;
 }
 .title-cours .icon-title {
@@ -33,6 +34,7 @@ body {
 .title-cours i {
     font-size: 36px;
     position: relative;
+    z-index: 13;
     top: -3px;
 }
 .cours-content {
@@ -193,6 +195,7 @@ body {
 .note-commentaire i {
     font-size: 0.7em;
     position: relative;
+    z-index: 10;
     top: -2px;
     color: gray;
     cursor: pointer;
@@ -205,6 +208,7 @@ body {
 .systeme-comment i {
     font-size: 54px;
     position: relative;
+    z-index: 20;
     left: -4%;
 }
 .all-comment-sites {
