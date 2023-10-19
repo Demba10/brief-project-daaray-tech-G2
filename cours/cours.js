@@ -17,4 +17,8 @@ f1.addEventListener('click', function () {
     f2.style.color = 'black';
 });
 
-alert(document.body.baseURI);
+const essaie = document.body.baseURI;
+const val = essaie.search(/G2/);
+const nouveau = essaie.slice(0, (val +2));
+alert(nouveau);
+alert(essaie.search('G2'));
