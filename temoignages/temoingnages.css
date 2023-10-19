@@ -1,3 +1,18 @@
+.banier
+{
+  height: 550px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.banierh1
+{
+  background-color: white;
+  height: 100px;
+  width: 100%;
+  color: var(--basecolor);
+
+}
 .carte
 {
     padding: 20px;
@@ -6,9 +21,9 @@
 }
 .carte img
 {
+    margin: 0 auto;
     width: 150px;
     height: 150px;
-    margin-left: 76px;
 }
 .card-body
 {
