@@ -1,0 +1,47 @@
+*
+{
+    padding: 2px;
+    margin: 2px;
+}
+.mentionslegales 
+{
+    background-color:var(--secondColor);
+}
+.mentionslegalesh1
+{
+    margin-left:30px;
+}
+.mentionslegalesh1 hr
+{
+    background-color:#E45923 !important ;
+    border: 1px solid #E45923 !important;
+    width: 6%;
+    margin-top:-7px;
+    margin-left:5px;
+}
+.mentionslegalesh1 h1
+{
+    font-size: var(--titreSectionSize);
+    color: var(--baseColor);
+}
+.mentionslegalestexte 
+{
+   display: flex;
+   font-size: 18px;
+}
+.img1
+{
+    height: 200px;
+    width: 200px;
+    margin-left: 160px;
+    margin-top: -50px;
+}
+.img2
+{
+    border: 5px solid var(--baseColor);
+    height: 98px;
+    width: 110px;
+    margin-top: 80px !important;
+    margin-left: -60px;
+
+}
