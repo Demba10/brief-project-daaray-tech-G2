@@ -1,6 +1,20 @@
 body {
     font-size: 16px;
 }
+.banner {
+    height: 700px;
+    width: 100%;
+    background-image: url("https://media.gettyimages.com/id/1187833318/fr/photo/ux-ui-and-programming-development-technology.jpg?s=612x612&w=0&k=20&c=eCFw-hAWJ6c56aH_sS7n9Ajw6y4gG_AjTXKZAQjgUfI=");
+    background-size: cover;
+    background-position: center;
+}
+
+.bannerOpacity {
+    height: 100%;
+    width: 100%;
+    background-color: var(--zeus);
+    opacity: 0.8;
+}
 #cours {
     width: 80%;
     margin: 40px auto;
@@ -227,6 +241,7 @@ body {
     border-radius: 20px;
     position: relative;
     z-index: 90;
+    overflow-y: auto;
 }
 
 .close {
