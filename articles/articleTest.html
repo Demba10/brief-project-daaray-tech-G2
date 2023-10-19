@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    <link rel="stylesheet" href="innercss.css">
+    <title>Articles</title>
+</head>
+
+<body>
+    <h1>Articles</h1>
+    <!-- conteneur des card article -->
+    <div id="articleItems" class=" container"></div>
+
+    <script>
+        // tableau d'objet article
+        const articles = [
+            {
+                "id": 1,
+                "titre": "Qu’est-ce que le certificat ISTQB ?",
+                "description": "Curieux des certifications ISTQB, de leurs avantages et de la réussite …",
+                "datePublication": "2023-10-18",
+                "image": 'https://img.freepik.com/photos-gratuite/pointage-du-doigt-main-du-robot-technologie-ia_53876-129778.jpg?size=626&ext=jpg&ga=GA1.1.224077371.1696859023&semt=ais',
+                "commentaire": [
+                    'test', 'test2', 'test3'
+                ]
+            },
+
+            {
+                "id": 2,
+                "titre": "Le développement, ce n’est pas pour les femmes!?",
+                "description": "Apprenez-en davantage sur la conception UX vs UI : exemples réussis et ratés, les différences clés...",
+                "datePublication": "2023-09-19",
+                "image": 'https://img.freepik.com/photos-premium/seance-photo-rendu-3d-scene-future-enfants-explorant-prototype-neuralink-dev_655090-437454.jpg?size=626&ext=jpg&ga=GA1.1.224077371.1696859023&semt=sph',
+                "commentaire": [
+                    'test', 'test2', 'test3'
+                ]
+            },
+
+            {
+                "id": 3,
+                "titre": "Comment les jeux vidéo en ligne recréent des liens sociaux?",
+                "description": "En ces temps de coronavirus, ce sentiment est d’autant plus exacerbé puisque les liens…",
+                "datePublication": "2023-09-19",
+                "image": 'https://img.freepik.com/photos-premium/vue-dessus-espace-travail-du-joueur_160097-399.jpg?size=626&ext=jpg&ga=GA1.1.224077371.1696859023&semt=ais',
+                "commentaire": [
+                    'test', 'test2', 'test3'
+                ]
+            },
+
+            {
+                "id": 4,
+                "titre": " UX vs UI : Quelle est la différence?",
+                "description": "Apprenez-en davantage sur la conception UX vs UI : exemples réussis et ratés, les différences clés...",
+                "datePublication": "2023-09-19",
+                "image": 'https://img.freepik.com/photos-premium/gros-plan-du-lieu-travail-du-concepteur-interface-utilisateur-creant-application-utilisable-pour-appareils-croquis-smartphone-table_274679-13802.jpg?size=626&ext=jpg&ga=GA1.1.224077371.1696859023&semt=ais',
+                "commentaire": [
+                    'test', 'test2', 'test3'
+                ]
+            },
+
+            {
+                "id": 5,
+                "titre": "Le déficit de talents en cybersécurité en Afrique?",
+                "description": "Découvrez comment l’Afrique aborde la question de la pénurie de compétences en cybersécurité. Informez-vous sur les recommandations…",
+                "datePublication": "2023-09-19",
+                "image": 'https://img.freepik.com/photos-gratuite/vue-elevee-ordinateur-portable-divers-alphabets-fond-blanc_23-2147924252.jpg?size=626&ext=jpg&ga=GA1.1.224077371.1696859023&semt=ais',
+                "commentaire": [
+                    'test', 'test2', 'test3'
+                ]
+            },
+            
+
+            {
+                "id": 6,
+                "titre": "Pourquoi JavaScript est-il si populaire ?",
+                "description": "JavaScript, un langage qui a conquis les cœurs et les esprits. Informez-vous sur les recommandations…",
+                "datePublication": "2023-09-19",
+                "image": 'https://img.freepik.com/vecteurs-libre/programmeur-travaillant-code-developpement-web-ingenieur-programmation-python-php-java-script-ordinateur_90220-250.jpg?size=626&ext=jpg&ga=GA1.1.224077371.1696859023&semt=ais',
+                "commentaire": [
+                    'test', 'test2', 'test3'
+                ]
+            },
+        ]
+
+        // recuperer le conteneur de nos article
+        const articleItems = document.getElementById('articleItems')
+
+        // parcourir le tableau de d'objet article puis a chaque tours de boucle  on crée un nouveau div et on injecte la class articleItem
+        articles.forEach(article => {
+            //creation du conteneur div
+            const articleItem = document.createElement('div');
+            //ajout de la class articleItem dans le div
+            articleItem.classList.add('articleItem');
+            //mettre le contenue de l'element articleItem
+            articleItem.innerHTML = `
+        <div class="cartArticle">
+            <div class="card" style="width: 18em; box-shadow: 0 0 10px rgba(0, 0 ,0.2);">
+                    <img src="${article.image}" class="card-img-top" id=imgTop alt="...">
+                <div class="cartDate">
+                    <i class="bi bi-calendar4"></i>
+                    <p>${article.datePublication}</p>
+                </div>
+                <div class="card-body style="width: 12em; height: 50px;box-shadow: 0 0 10px rgba(0, 0 ,0.2); border: solid black 1px">
+                    <h5 class="card-title" id= htitre>${article.titre}<h5>
+                    <p class="card-text" id=pdiscription>${article.description}</p>
+                    <button id="voirplus">voir plus</button>
+                </div>
+            </div>
+        </div>
+            `
+            //ajouter l'element dans le conteneur parent articleItems
+            articleItems.appendChild(articleItem)
+        });
+
+
+
+
+    </script>
+</body>
+
+</html>
