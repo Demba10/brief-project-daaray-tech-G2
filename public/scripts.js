@@ -3,14 +3,17 @@ const header = document.getElementById('header');
 const footer = document.getElementById('footer');
 
 //recuperer le chemin du fichier
-const uri = document.baseURI;
+// const uri = document.baseURI;
 //recuperer les element apres chaque slash et creer un tableau
-var eltsUri = uri.split('/');
+// var eltsUri = uri.split('/');
 //creer le chemin racine en recuperant que le 8 premiere element et ajouter de slash entre eux
-var root = eltsUri.slice(2, 7).join('/') + '/';
+// var root = eltsUri.slice(2, 7).join('/') + '/';
 
 // console.log(basePath);
 
+const uri = document.body.baseURI;
+const val = uri.search(/G2/);
+const root = uri.slice(0, (val + 2));
 
 //injecter le code du header
 header.innerHTML = `
