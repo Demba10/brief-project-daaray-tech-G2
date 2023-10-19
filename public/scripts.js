@@ -121,28 +121,28 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 //fonction qui nous permet de revenir en haut de la page
-let calcScrollValue = () =>{
+let calcScrollValue = () => {
     //recuperer l' Id du conteneur et de l'element enfant
     let scrollProgress = document.getElementById('progress');
     let scrolProgressValue = document.getElementById('progressValue');
 
     let pos = document.documentElement.scrollTop;
     let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    let scrollValue = Math.round((pos * 100)/calcHeight)
-    if(pos>100){
-      scrollProgress.style.display = 'grid';
-    }else{
-      scrollProgress.style.display = 'none';
+    let scrollValue = Math.round((pos * 100) / calcHeight)
+    if (pos > 100) {
+        scrollProgress.style.display = 'grid';
+    } else {
+        scrollProgress.style.display = 'none';
     }
 
     scrollProgress.addEventListener('click', () => {
-      document.documentElement.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
     })
 
     scrollProgress.style.background = `conic-gradient(var(--baseColor) ${scrollValue}%, var(--secondColor) ${scrollValue}%)`;
-  }
+}
 
 
-  window.onscroll = calcScrollValue;
-  window.onload = calcScrollValue;
+window.onscroll = calcScrollValue;
+window.onload = calcScrollValue;
 

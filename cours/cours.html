@@ -207,16 +207,16 @@
                     </div>
                     <div class="cours-comment-part">
                         <form action="">
-                            <input type="text" placeholder="Votre nom ?">
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Vote commmentaire ..."></textarea>
+                            <input type="text" placeholder="Votre nom ?" id="nom">
+                            <textarea name="" id="commentaire" cols="30" rows="10" placeholder="Vote commmentaire ..." ></textarea>
                             <div class="note-commentaire">
                                 <h6>Note : </h6>
-                                <div class="note-star">
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
-                                    <span><i class="fa-solid fa-star"></i></span>
+                                <div class="note-star" >
+                                    <span><i class="fa-solid fa-star note" id="note"></i></span>
+                                    <span><i class="fa-solid fa-star note" id="note"></i></span>
+                                    <span><i class="fa-solid fa-star note" id="note"></i></span>
+                                    <span><i class="fa-solid fa-star note" id="note"></i></span>
+                                    <span><i class="fa-solid fa-star note" id="note"></i></span>
                                 </div>
                             </div>
                             <input type="submit" value="Envoyer" class="">
@@ -225,15 +225,80 @@
                 </div>
             </div>
         </div>
-        <div class="systeme-comment">
-            <i class="fa-regular fa-comment-dots"></i>
+        <button id="popupButton">
+            <div class="systeme-comment">
+                <i class="fa-regular fa-comment-dots"></i>
+            </div>
+        </button>
+        
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close" id="closePopup">&times;</span>
+                <h2>Commentaires</h2>
+                <div class="cours-comment-all">
+                    <div class="cours-comment popup-comment">
+                        <div class="cours-comment-part">
+                            <div class="comment-profil">
+                                <div class="img-profil">
+                                    <img src="https://w7.pngwing.com/pngs/129/292/png-transparent-female-avatar-girl-face-woman-user-flat-classy-users-icon.png"
+                                        alt="">
+                                </div>
+                                <div class="name-profil">Mamouné Sarr</div>
+                            </div>
+                            <div class="note-comment">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span class="comment-date">18/10/2023</span>
+                            </div>
+                            <p class="text-commnent">Lorem ipsum dolor sit amet consectetur. Risus amet ac quis mattis. Duis velit et
+                                sit at leo sed suscipit.</p>
+                        </div>
+                        <div class="cours-comment-part">
+                            <div class="comment-profil">
+                                <div class="img-profil">
+                                    <img src="https://static.vecteezy.com/system/resources/previews/019/896/008/original/male-user-avatar-icon-in-flat-design-style-person-signs-illustration-png.png"
+                                        alt="">
+                                </div>
+                                <div class="name-profil">Diouldé Ly</div>
+                            </div>
+                            <div class="note-comment">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span class="comment-date">18/10/2023</span>
+                            </div>
+                            <p class="text-commnent">Lorem ipsum dolor sit amet consectetur. Risus amet ac quis mattis. Duis velit et
+                                sit at leo sed suscipit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- <div class="all-comment-sites">
+        <script>
+            // Récupérez le bouton et le popup
+            var popupButton = document.getElementById("popupButton");
+            var popup = document.getElementById("popup");
+            var closePopup = document.getElementById("closePopup");
 
-        </div> -->
+            // Affichez le popup quand le bouton est cliqué
+            popupButton.addEventListener("click", function () {
+                popup.style.display = "block";
+            });
+
+            // Masquez le popup quand la croix (close) est cliquée
+            closePopup.addEventListener("click", function () {
+                popup.style.display = "none";
+            });
+        </script>
     </section>
     <div id="footer"></div>
     <script src="cours.js"></script>
     <script src="../public/scripts.js"></script>
+    
 </body>
 </html>

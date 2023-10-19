@@ -16,3 +16,21 @@ f1.addEventListener('click', function () {
     f1.style.color = '#E45923';
     f2.style.color = 'black';
 });
+
+let note = document.querySelectorAll('.note');
+let nom = document.getElementById('nom');
+let commentaire = document.getElementById('commentaire');
+
+var c
+
+for (let i = 0; i < note.length; i++) {
+    note[i].addEventListener('click', function () {
+        for (let j = 0; j < (i +1) ; j++) {
+            note[j].style.color = '#E45923';
+        }
+        for (let j = (i +1); j < note.length; j++) {
+            note[j].style.color = 'gray';
+        }
+    })
+}
+
