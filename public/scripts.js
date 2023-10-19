@@ -44,8 +44,6 @@ header.innerHTML = `
 
 
         </header>
-        <div class="banner">
-        <div class="bannerOpacity"></div>
     </div>
 `;
 
