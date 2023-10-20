@@ -12,7 +12,7 @@ body {
 .bannerOpacity {
     height: 100%;
     width: 100%;
-    background-color: #231f1bd5;
+    background-color: #231f1baa;
 }
 .chemin-cours {
     position: absolute;
@@ -262,12 +262,11 @@ body {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
 }
-
 .popup-content {
     background-color: #fff;
     width: 60%;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 130px;
     height: 80vh;
     padding: 20px;
     border: 1px solid var(--baseColor);
@@ -313,6 +312,43 @@ body {
 @media screen and (max-width: 575.98px) {
     body {
         overflow-x: hidden;
+    }
+    .chemin-cours {
+        position: absolute;
+        top: 160px;
+        left: 0;
+        padding: 0 3%;
+        color: white;
+        font-weight: bolder !important;
+        gap: 10px;
+    }
+    .chemin-c {
+        flex-wrap: wrap;
+    }
+    .chemin-cours h4:first-child {
+        color: var(--baseColor);
+        font-weight: bolder !important;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        font-size: 26px;
+    }
+
+    .chemin-cours h4:last-child {
+        position: relative;
+        font-size: 24px;
+        top: 5px;
+    }
+
+    .chemin-cours h5 {
+        margin: 30px 0;
+        font-weight: 300;
+        font-size: 22px;
+    }
+    .chemin-cours p {
+        width: 90%;
+        line-height: 2;
+        font-weight: 600;
+        font-size: 16px;
     }
     #cours {
         width: 90%;
@@ -375,12 +411,14 @@ body {
     .cours-comment {
         grid-template-columns: 1fr;
     }
+    .popup-content {
+        width: 96%;
+    }
 }
 @media screen and (min-width: 576px) and (max-width: 991.98px) {
     body {
         font-size: 14px;
     }
-
     .title-cours {
         margin-bottom: 40px;
         min-width: max-content;
@@ -412,6 +450,9 @@ body {
     }
     .cours-comment {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .popup-comment {
+        grid-template-columns: 1fr;
     }
     .cours-comment-part:last-child {
         width: 200%;

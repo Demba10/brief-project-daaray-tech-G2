@@ -22,7 +22,7 @@ header.innerHTML = `
     </div>
     <header class="header">
 
-        <a href="#" class="logo"><img src="${root}/public/images/logoTest.png" alt=""></a>
+        <a href="${root}/accueil/accueil.html" class="logo"><img src="${root}/public/images/logoTest.png" alt=""></a>
 
         <input type="checkbox" id="check">
         <label for="check" class="icon">
