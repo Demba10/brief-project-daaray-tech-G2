@@ -45,3 +45,51 @@
     margin-left: -60px;
 
 }
+@media screen and (max-width:767px) 
+{
+    .img1
+{
+    height: 220px;
+    width: 220px;
+    margin:0 auto;
+}
+.img2
+{
+    border: 5px solid var(--baseColor);
+    height: 98px;
+    width: 110px;
+    margin:0 auto;
+    position: relative;
+    top: -140px;
+    left: 109px;
+
+}
+    .mentionslegalestexte
+    {
+        display: flex;
+        flex-direction: column;
+    }
+ /*    .mentionslegalestexte
+    {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    } */
+  
+    .g 
+    {
+        margin:0 auto;
+        padding:0 auto;
+        width:100%;
+        height: min-content;
+        justify-content: center;
+    } 
+    .mentionslegales 
+    {
+        background-color:var(--secondColor);
+    }
+        
+  
+  
+ 
+}
