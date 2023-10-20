@@ -12,7 +12,38 @@ body {
 .bannerOpacity {
     height: 100%;
     width: 100%;
-    background-color: rgba(10, 25, 54, 0.4);
+    background-color: #231f1bd5;
+}
+.chemin-cours {
+    position: absolute;
+    top: 200px;
+    left: 10%;
+    color: white;
+    font-weight: bolder !important;
+    gap: 10px;
+}
+.chemin-cours h4:first-child {
+    color: var(--baseColor);
+    font-weight: bolder !important;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    font-size: 32px;
+}
+.chemin-cours h4:last-child {
+    position: relative;
+    font-size: 36px;
+    top: 5px;
+}
+.chemin-cours h5 {
+    margin: 30px 0;
+    font-weight: 300;
+    font-size: 28px;
+}
+.chemin-cours p {
+    width: 46%;
+    line-height: 2;
+    font-weight: 600;
+    font-size: 20px;
 }
 #cours {
     width: 80%;
@@ -204,6 +235,10 @@ body {
 }
 .note-star {
     min-width: max-content;
+}
+.note-star button {
+    border: 0;
+    background-color: transparent;
 }
 .note-commentaire i {
     font-size: 0.7em;

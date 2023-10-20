@@ -40,7 +40,12 @@
     <div id="header"></div>
     <div class="banner">
         <div class="chemin-cours">
-            <h4>Formation</h4><i class="fa-solid fa-play"></i><h4>HTML</h4>
+            <div class="chemin-c d-flex align-items-center gap-4">
+                <h4>Formation</h4><i class="fa-solid fa-play"></i><h4>HTML</h4>
+            </div>
+            <h5>Cours complet en HTML5</h5>
+            <p>Découvrez ce qu'il faut pour créer une interface web statique réussie en utilisant le langage de balisage HTML 5. Daaray
+            technologie vous aide a sortir le meilleur de vous même...</p>
         </div>
         <div class="bannerOpacity">
         </div>
@@ -214,7 +219,7 @@
                     </div>
                     <div class="cours-comment-part">
                         <form action="">
-                            <input type="text" placeholder="Votre nom ?" id="nom">
+                            <input type="text" placeholder="Votre nom ?" id="nom" pattern="[A-Za-z0-9]+" required>
                             <textarea name="" id="commentaire" cols="30" rows="10" placeholder="Vote commmentaire ..." ></textarea>
                             <div class="note-commentaire">
                                 <h6>Note : </h6>
