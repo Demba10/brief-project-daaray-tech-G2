@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,25 +15,28 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
-    
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <!-- Fin favicon -->
-    
+
     <!-- Bootstrap Icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <!-- Fin bootstrap Icon -->
-    
+
     <!-- Fontawsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Fin fontawsome -->
-    
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <!--  -->
     <link rel="stylesheet" href="../public/styles.css">
     <link rel="stylesheet" href="contact.css">
 </head>
+
 <body>
     <div id="header"></div>
     <div class="banner">
@@ -52,14 +56,19 @@
             <h2>Contact</h2>
         </div>
         <div class="contact-medias justify-content-center d-flex gap-4">
-            <i class="fa-solid fa-envelope"></i>
+            <i class="fa-solid fa-envelope medi-over"></i>
             <i class="fa-solid fa-phone"></i>
             <i class="fa-solid fa-map-pin"></i>
         </div>
+        <script>
+            let lsMedia = document.querySelectorAll('.media-over');
+
+        </script>
         <div class="contact-form d-flex justify-content-center">
             <form action="" class="d-flex flex-column w-100 gap-4">
                 <input type="text" placeholder="Nom complet" pattern="[A-Za-z0-9]+" required>
-                <input type="email" placeholder="Adresse électronique" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required>
+                <input type="email" placeholder="Adresse électronique"
+                    pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required>
                 <textarea name="" id="" cols="30" rows="10" placeholder="Comment pouvons-nous vous aider ?"></textarea>
                 <input type="submit" value="Envoyer mon message">
             </form>
@@ -69,4 +78,5 @@
     <script src="cours.js"></script>
     <script src="../public/scripts.js"></script>
 </body>
+
 </html>

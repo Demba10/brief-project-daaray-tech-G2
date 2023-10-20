@@ -1,6 +1,7 @@
 body {
     font-size: 16px;
 }
+
 .banner {
     height: 700px;
     width: 100%;
@@ -14,6 +15,7 @@ body {
     width: 100%;
     background-color: #231f1baa;
 }
+
 .chemin-cours {
     position: absolute;
     top: 200px;
@@ -22,6 +24,7 @@ body {
     font-weight: bolder !important;
     gap: 10px;
 }
+
 .chemin-cours h4:first-child {
     color: var(--baseColor);
     font-weight: bolder !important;
@@ -29,38 +32,46 @@ body {
     text-underline-offset: 4px;
     font-size: 32px;
 }
+
 .chemin-cours h4:last-child {
     position: relative;
     font-size: 36px;
     top: 5px;
 }
+
 .chemin-cours h5 {
     margin: 30px 0;
     font-weight: 300;
     font-size: 28px;
 }
+
 .chemin-cours p {
     width: 46%;
     line-height: 2;
     font-weight: 600;
     font-size: 20px;
 }
+
 #cours {
     width: 80%;
     margin: 40px auto;
 }
+
 .mobile-filter {
     display: none;
 }
+
 .title-cours {
     display: flex;
     align-items: center;
     margin-bottom: 40px;
     min-width: max-content;
 }
+
 .difficulte-cours {
     align-items: center;
 }
+
 .title-cours div span {
     background-color: var(--baseColor);
     color: white;
@@ -71,25 +82,30 @@ body {
     z-index: 1;
     top: -3px;
 }
+
 .title-cours .icon-title {
     color: var(--baseColor);
     animation: iconima 200ms linear;
 }
+
 .title-cours i {
     font-size: 36px;
     position: relative;
     z-index: 2;
     top: -3px;
 }
+
 .cours-content {
     display: grid;
     grid-template-columns: 5fr 5fr;
     gap: 30px;
 }
+
 .content-all {
     height: 600px;
     overflow: hidden;
 }
+
 .content-left {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -97,17 +113,21 @@ body {
     padding-right: 20px;
     overflow-y: scroll;
 }
+
 .content-left::-webkit-scrollbar-thumb {
     background-color: var(--zeus);
     border-radius: 4px;
 }
+
 .content-left::-webkit-scrollbar-track {
     background-color: var(--secondColor);
     border-radius: 4px;
 }
+
 .content-left::-webkit-scrollbar {
     width: 10px;
 }
+
 .content-left-items {
     border: 1px solid;
     min-width: min-content;
@@ -119,10 +139,12 @@ body {
     background-color: #F1F1F1;
     border: 1px solid var(--zeus);
 }
+
 .content-left-items:first-child {
     background-color: var(--zeus);
     color: white;
 }
+
 .content-right-items {
     height: 210px;
     width: 100%;
@@ -132,27 +154,33 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .cri-desc-all {
     padding: 14px;
 }
+
 .content-left-items div h6 {
     font-size: 1em;
     font-weight: 700;
 }
+
 .cri-formations p,
 .cri-cours p {
     font-size: 0.9em;
     opacity: 0.9;
     text-align: justify;
 }
+
 .cri-formations p {
     text-overflow: ellipsis;
     text-align: justify;
 }
+
 .cri-desc-all p span {
     font-style: italic;
     font-weight: 700;
 }
+
 #cours h4 {
     color: var(--zeus);
     font-size: 1.2em;
@@ -164,53 +192,64 @@ body {
 .cours-bot {
     margin: 50px 0;
 }
+
 .cours-comment {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     margin: 30px 0;
 }
+
 .comment-profil {
     display: flex;
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
 }
+
 .img-profil {
     width: 60px;
     height: 60px;
-    background-color:  rgb(170, 166, 166);
+    background-color: rgb(170, 166, 166);
     border-radius: 50%;
 }
+
 .name-profil {
     font-size: 1em;
     font-weight: 700;
 }
+
 .note-comment {
     display: flex;
     gap: 4px;
     margin: 20px 0;
 }
+
 .note-comment span {
     color: var(--baseColor);
     font-size: 0.7em;
 }
+
 .note-comment span:last-child {
     color: gray;
 }
+
 .text-commnent {
     font-size: 0.8em;
     width: 80%;
 }
+
 .img-profil {
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
 }
+
 .img-profil img {
     width: 100%;
 }
+
 .cours-comment-part input,
 .cours-comment-part textarea {
     width: 100%;
@@ -220,26 +259,32 @@ body {
     text-indent: 12px;
     padding: 4px;
 }
+
 .cours-comment-part textarea {
     height: 70px;
 }
+
 .note-commentaire {
     display: flex;
     gap: 10px;
 }
+
 .note-commentaire h6 {
     font-size: 1em;
     font-weight: 600;
     color: var(--zeus);
     min-width: max-content;
 }
+
 .note-star {
     min-width: max-content;
 }
+
 .note-star button {
     border: 0;
     background-color: transparent;
 }
+
 .note-commentaire i {
     font-size: 0.7em;
     position: relative;
@@ -247,11 +292,13 @@ body {
     color: gray;
     cursor: pointer;
 }
+
 .cours-comment-part input:last-child {
     border: 1px solid transparent;
     background-color: var(--zeus);
     color: white;
 }
+
 .popup {
     display: none;
     position: fixed;
@@ -262,6 +309,7 @@ body {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
 }
+
 .popup-content {
     background-color: #fff;
     width: 60%;
@@ -286,16 +334,20 @@ body {
     font-size: 40px;
     cursor: pointer;
 }
+
 .popup-comment {
     grid-template-columns: 1fr;
 }
+
 .popup-content h2 {
     color: var(--zeus);
 }
+
 .comment-date {
     text-indent: 90%;
 }
-#popupButton{
+
+#popupButton {
     width: 60px;
     height: 60px;
     border: 2px solid var(--zeus);
@@ -305,14 +357,17 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .systeme-comment i {
     font-size: 30px;
     color: white;
 }
-@media screen and (max-width: 575.98px) {
+
+@media screen and (max-width: 625.98px) {
     body {
         overflow-x: hidden;
     }
+
     .chemin-cours {
         position: absolute;
         top: 160px;
@@ -322,9 +377,11 @@ body {
         font-weight: bolder !important;
         gap: 10px;
     }
+
     .chemin-c {
         flex-wrap: wrap;
     }
+
     .chemin-cours h4:first-child {
         color: var(--baseColor);
         font-weight: bolder !important;
@@ -344,15 +401,18 @@ body {
         font-weight: 300;
         font-size: 22px;
     }
+
     .chemin-cours p {
         width: 90%;
         line-height: 2;
         font-weight: 600;
         font-size: 16px;
     }
+
     #cours {
         width: 90%;
     }
+
     .mobile-filter {
         display: flex;
         gap: 20px;
@@ -361,19 +421,23 @@ body {
         font-size: 1.2em;
         cursor: pointer;
     }
+
     #filter-1 {
         color: var(--baseColor);
     }
+
     .title-cours {
         display: grid;
         margin-bottom: 40px;
-        min-width: 2px;    
+        min-width: 2px;
     }
+
     .content-all {
         height: max-content;
         overflow: visible;
         padding-right: 0;
     }
+
     .content-left {
         order: 2;
         grid-template-columns: 1fr;
@@ -381,9 +445,11 @@ body {
         overflow-y: auto;
         padding: 10px;
     }
+
     .content-right {
         order: 1;
     }
+
     .title-cours h6 {
         font-size: 0.8em;
     }
@@ -391,6 +457,7 @@ body {
     .title-cours h3 {
         font-size: 1em;
     }
+
     .title-cours .icon-title {
         color: var(--baseColor);
         animation: iconima 200ms linear;
@@ -399,26 +466,37 @@ body {
     .title-cours i {
         font-size: 24px;
     }
+
     .cours-content {
         grid-template-columns: 1fr;
     }
+
     .content-left {
         display: none;
     }
+
     .content-right {
         width: 100%;
     }
+
     .cours-comment {
         grid-template-columns: 1fr;
     }
+
     .popup-content {
         width: 96%;
     }
+
+    .content-left-items {
+        height: max-content !important;
+    }
 }
-@media screen and (min-width: 576px) and (max-width: 991.98px) {
+
+@media screen and (min-width: 626px) and (max-width: 991.98px) {
     body {
         font-size: 14px;
     }
+
     .title-cours {
         margin-bottom: 40px;
         min-width: max-content;
@@ -448,13 +526,19 @@ body {
     .content-left {
         grid-template-columns: 1fr;
     }
+
     .cours-comment {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .popup-comment {
         grid-template-columns: 1fr;
     }
+
     .cours-comment-part:last-child {
         width: 200%;
+    }
+    .content-left-items {
+        height: max-content !important;
     }
 }
