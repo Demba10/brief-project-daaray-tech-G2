@@ -36,19 +36,15 @@ for (let i = 0; i < note.length; i++) {
         lsNote = i + 1;
     })
 }
-alert(etole.length);
 var lsNom = '', lsCom = '';
 nom.addEventListener('change', function (e) {
-    lsNom = localStorage.setItem('nom', e.target.value);
+    lsNom = localStorage.gettItem('nom', JSON.stringify(e.target.value)) || [];
 });
 commentaire.addEventListener('change', function (e) {
-    lsCom = localStorage.setItem('com', e.target.value);
+    lsCom = localStorage.setItem('com', JSON.stringify(e.target.value));
 });
 valide.addEventListener('click', function (e) {
     e.preventDefault();
-    alert(localStorage.getItem('nom'));
-    alert(lsCom);
-    alert(localStorage.getItem('note'));
     ajouCom.innerHTML += ` 
     <div class="cours-comment-part">
         <div class="comment-profil">
@@ -56,17 +52,19 @@ valide.addEventListener('click', function (e) {
                 <img src="https://w7.pngwing.com/pngs/129/292/png-transparent-female-avatar-girl-face-woman-user-flat-classy-users-icon.png"
                     alt="">
             </div>
-            <div class="name-profil">${localStorage.getItem('nom')}</div>
+            <div class="name-profil">${lsNom}</div>
         </div>
         <div class="note-comment">
-            <span><i class="fa-solid fa-star"></i></span>
+            <span><i class="fa-solid fa-star" style = "color : ${etole[1]}"></i></span>
             <span><i class="fa-solid fa-star"></i></span>
             <span><i class="fa-solid fa-star"></i></span>
             <span><i class="fa-solid fa-star"></i></span>
             <span><i class="fa-solid fa-star"></i></span>
             <span class="comment-date">18/10/2023</span>
         </div>
-        <p class="text-commnent">${localStorage.getItem('com')}</p>
+        <p class="text-commnent">${lsCom}</p>
     </div>
     `
 });
+
+
