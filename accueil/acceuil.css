@@ -42,11 +42,13 @@
 
 @media screen and (max-width: 767px) {
   section.about {
-    height: 1500px;
+    height: 1200px;
     /* border: 2px solid; */
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* border: 2px solid black; */
+
   }
 
   section.about h1 {
@@ -58,7 +60,7 @@
 
   .about .aboutContainer {
     width: 80%;
-    height: 83%;
+    height: 97%;
     margin: 0 auto;
     /* border: 2px solid; */
     display: flex;
@@ -84,15 +86,15 @@
     font-size: var(--defaulFontSize);
     justify-content: center;
     align-items: center;
-    background-color: var(--poussierEtoile);
-    color: white;
+    background-color: var(--secondColor);
+    color: black;
     font-size: 1.1rem;
     height: 50%;
   }
 
   section.service {
     height: 5000px;
-    /* border: 2px solid; */
+    border: 2px solid white;
     /* display: flex;
     flex-direction: column;
     justify-content: center; */
@@ -163,18 +165,19 @@
   section.team {
     height: 2500px;
     background-color: rgba(255, 255, 255, 0.616);
+    border: 1px solid white;
   }
 
   section.team h1 {
     text-align: center;
     font-size: var(--titreSectionSize);
     font-weight: var(--titreSectionGraisse);
-    margin: 2% 0;
+    margin-bottom: 6%;
   }
 
   .team .teamItems {
     /* border: solid 1px ; */
-    height: 90%;
+    height: 97%;
     width: 80%;
     margin: 0 auto;
     display: grid;
@@ -234,7 +237,6 @@
   }
 
   section.temoignage {
-    /* margin-top: 5%; */
     margin-bottom: 5%;
     height: 1000px;
     background-color: rgba(255, 255, 255, 0.616);
@@ -242,9 +244,9 @@
 
   section.temoignage h1 {
     text-align: center;
-    font-size: 16px;
+    font-size: var(--titreSectionSize);
     font-weight: var(--titreSectionGraisse);
-    margin: 2% 0;
+    margin-top: 2.5%;
   }
 
   .temoignage .carte {
@@ -314,8 +316,8 @@
     font-size: var(--defaulFontSize);
     justify-content: center;
     align-items: center;
-    background-color: var(--poussierEtoile);
-    color: white;
+    background-color: var(--secondColor);
+    color: black;
     font-size: 1.3rem;
     /* height: 50%; */
   }
