@@ -87,7 +87,7 @@ footer.innerHTML = `
         </p>
         <form action="#">
             <input type="email" name="" id="" placeholder="veuillez entrer votre email">
-            <input type="submit" value="S'inscrire maintenant">
+            <input onclick='swl' type="submit" value="S'inscrire maintenant">
         </form>
     </div>
 </div>
