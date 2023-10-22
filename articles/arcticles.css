@@ -15,11 +15,23 @@
     align-items: center;
     justify-content: center;
 }
+/* styles.css */
+#searchInput {
+    width: 15%;
+    padding: 10px;
+    margin: 15px auto;
+}
+
+#itemsList li {
+    list-style: none;
+    margin: 5px;
+}
+
 .bannerOpacity h1{
     color: var(--baseColor);
     font-weight: var(--titreSectionGraisse);
     font-size: 45px;
-    z-index: 100;
+    z-index:100;
 }
 :root {
     --baseColor : #E45923;
@@ -63,6 +75,7 @@ body {
 }
 .cartArticle{
     box-shadow: 10px 10px 5px -2px rgba(0, 0, 0, 0.37);
+    /* border-radius: 10%; */
     /* border: solid black 1px; */
     width: 18em; 
     /* height: 80px; */
@@ -80,7 +93,7 @@ body {
     font-weight: bold;
 }
 #pdiscription{
-    font-size: 15px;
+    font-size:var(--defaulFontSize);
 
 }
 #popupButton{
@@ -88,7 +101,7 @@ body {
     height: 25px;
     border-radius: 35%;
     color: var(--baseColor);
-    font-size: 10px;
+    font-size: var(--defaulFontSize);
     border: none;
 }
 .voirplus{
@@ -96,7 +109,7 @@ body {
     height: 25px;
     border-radius: 35%;
     color: var(--baseColor);
-    font-size: 10px;
+    font-size: var(--defaulFontSize);
     border: none;
 }
 #popupButton{
@@ -104,7 +117,7 @@ body {
     height: 25px;
     border-radius: 35%;
     color: var(--baseColor);
-    font-size: 10px;
+    font-size: var(--defaulFontSize);
     border: none;
 }
 
@@ -244,7 +257,7 @@ body {
 }
 .divDetailArticles h4{
     color: var(--baseColor);
-    font-size: 30px;
+    font-size: var(--defaulFontSize);
 
 }
 .divDetailArticles iframe{
@@ -256,13 +269,13 @@ body {
 .divDetailArticles p{
     margin-left: 15px;
     margin-right: 10px;
-    font-size: 20px;
+    font-size: var(--defaulFontSize);
 }
 .divDetailArticles h6{
     margin-left: 15px;
     margin-right: 10px;
     padding: 10px;
-    font-size: 25px;
+    font-size: var(--defaulFontSize);
     color: var(--baseColor);
 }
 
@@ -273,6 +286,7 @@ body {
     margin: 15px auto;
     width: 90%;
     height:35%;
+    font-size: medium;
 }
 .divcomment{
     /* border: solid 1px lawngreen; */
@@ -280,6 +294,7 @@ body {
     height: 47%;
     margin: 0 auto;
     margin: 15px;
+    font-size: medium;
 }
 .avatar{
     /* border: 1px solid rgb(139, 19, 113);  */
@@ -288,7 +303,7 @@ body {
     /* margin: 15px auto; */
     width: 75%;
     height:100%; 
-
+    font-size: medium;
 }
 .divComtext{
     /* border: 1px solid rgb(139, 19, 113);  */
@@ -297,6 +312,7 @@ body {
     margin: 15px auto;
     width: 90%;
     height:45%;
+    font-size: medium;
 }
 /* mediaqueries */
 
@@ -309,6 +325,7 @@ body {
         column-gap: 10px;
         row-gap: 10px;
         flex-wrap: wrap;
+        font-size: medium;
     
 }
 
@@ -320,6 +337,7 @@ body {
     box-shadow: 10px 10px 5px -2px rgba(0, 0, 0, 0.37);
     /* border: solid black 1px; */
     width: 18em; 
+    font-size: medium;
     /* height: 80px; */
 }
 
@@ -335,6 +353,7 @@ body {
         /* column-gap: 10px; */
         /* row-gap: 10px; */
         flex-wrap: wrap;
+        font-size: medium;
     
 }
 
