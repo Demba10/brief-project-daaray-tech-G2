@@ -24,6 +24,7 @@ body {
 #progress{
     background-color: var(--mainColor);
     position: fixed;
+    z-index: 99;
     bottom: 20px;
     right: 20px;
     height: 70px;
@@ -285,7 +286,7 @@ footer {
   padding-left: 30px;
 }
 
-.footerTop .footerTopRight form input[type="submit"] {
+.footerTop .footerTopRight form input[type="button"] {
   background-color: var(--baseColor);
   border: none;
   color: white;
