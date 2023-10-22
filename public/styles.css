@@ -286,7 +286,7 @@ footer {
   padding-left: 30px;
 }
 
-.footerTop .footerTopRight form input[type="submit"] {
+.footerTop .footerTopRight form input[type="button"] {
   background-color: var(--baseColor);
   border: none;
   color: white;

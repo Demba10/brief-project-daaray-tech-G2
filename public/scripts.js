@@ -1,3 +1,5 @@
+
+
 //recuperer le header et le footer a travers leurs Id
 const header = document.getElementById('header');
 const footer = document.getElementById('footer');
@@ -86,8 +88,8 @@ footer.innerHTML = `
             S’INSCRIRE A LA NEWSLATTER
         </p>
         <form action="#">
-            <input type="email" name="" id="" placeholder="veuillez entrer votre email">
-            <input type="submit" value="S'inscrire maintenant">
+            <input type="email" name="email" id="email" placeholder="veuillez entrer votre email">
+            <input onclick='swl()' type="button" value="S'inscrire maintenant">
         </form>
     </div>
 </div>
@@ -147,4 +149,25 @@ let calcScrollValue = () => {
 
 window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
+
+
+
+function swl() {
+    let input = document.querySelector('#email')
+    if (input.value === '') {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Veuillez entrer votre email'
+          })
+    }else{
+        Swal.fire({
+            icon: 'success',
+            title: 'Inscription avec succées',
+            text: 'A très bientôt'
+          })
+    }
+
+}
+
 
