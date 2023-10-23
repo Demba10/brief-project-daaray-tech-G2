@@ -56,15 +56,38 @@
             <h2>Contact</h2>
         </div>
         <div class="contact-medias justify-content-center d-flex gap-4">
-            <i class="fa-solid fa-envelope medi-over"></i>
-            <div class="contact-float"><a href=""></a></div>
+            <i class="fa-solid fa-envelope media-over"></i>
+            <div class="contact-float"><a href="mailto:djibysec8@gmail.com">djibysec8@gmail.com</a></div>
             <i class="fa-solid fa-phone media-over"></i>
-            <div class="contact-float"><a href=""></a></div>
+            <div class="contact-float"><a href="https://wa.me/+221774065868">774065868</a></div>
             <i class="fa-solid fa-map-pin media-over"></i>
-            <div class="contact-float"><a href=""></a></div>
+            <div class="contact-float"><a href="https://maps.app.goo.gl/ogXfQ6XPz3qQhYEZ6">DAKAR, SENEGAL</a></div>
         </div>
         <script>
             let lsMedia = document.querySelectorAll('.media-over');
+            let mdOver = document.querySelectorAll('.contact-float');
+
+            lsMedia[0].addEventListener('mouseover', function () {
+                mdOver[0].style.display = 'block';
+                mdOver[1].style.display = 'none';
+                mdOver[2].style.display = 'none';
+            });
+            lsMedia[1].addEventListener('mouseover', function () {
+                mdOver[1].style.display = 'block';
+                mdOver[0].style.display = 'none';
+                mdOver[2].style.display = 'none';
+            });
+            lsMedia[2].addEventListener('mouseover', function () {
+                mdOver[2].style.display = 'block';
+                mdOver[0].style.display = 'none';
+                mdOver[1].style.display = 'none';
+            });
+
+            for (let i = 0; i < lsMedia.length; i++) {
+                lsMedia[i].addEventListener('click', function () {
+                    mdOver[i].style.display = 'none';
+                })
+            }
 
 
         </script>

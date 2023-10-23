@@ -96,6 +96,27 @@
     margin-bottom: 50px;
     padding: 40px 20px;
 }
+.contact-float {
+    position: absolute;
+    margin-top: -50px;
+    margin-left: -0px;
+    background-color: var(--secondColor);
+    padding: 8px 12px;
+    border-radius: 12px;
+}
+.contact-float a {
+    text-decoration: none;
+    color: black;
+}
+.contact-float a:hover {
+    color: var(--baseColor);
+}
+.contact-float {
+    display: none;
+}
+.media-over {
+    cursor: pointer;
+}
 @media screen and (max-width: 991.98px) {
     #contact {
         padding: 0;

@@ -45,11 +45,27 @@
             <h1>Articles</h1>
         </div>
     </div>
+    <input type="text" id="searchInput" placeholder="Rechercher...">
+    <ul id="itemsList">
+        <li></li>
+        <li></li>
+        <li></li>
+        <!-- Ajoutez d'autres éléments de liste ici -->
+    </ul>
+    <script src="script.js"></script>
     <!-- section Articles -->
-    <section class="sectionArticles">
+    <!-- <section class="team">
+        <div class="champRecherche">
+            <input type="search" name="" id="searchInput"placeholder="Recherche un article">
+        </div>
+        <div class="btnRecherche">
+            <button><i class="fa-solid fa-magnifying-glass"  onclick="searchList()"></i></button>
+        </div> -->
 
     <!-- conteneur des card article -->
     <div id="articleItems" class=" container"></div>
+</section>
+<div id="footer"></div>
 
     <script>
         // tableau d'objet article
@@ -77,7 +93,7 @@
                     'test', 'test2', 'test3'
                 ]
             },
-
+            
             {
                 "id": 3,
                 "titre": "Pourquoi JavaScript est-il si populaire ?",
@@ -139,23 +155,25 @@
             articleItem.classList.add('articleItem');
             //mettre le contenue de l'element articleItem
             articleItem.innerHTML = `
-        <div class="cartArticle">
-            <div class="card" style="width: 18em; box-shadow: 0 0 10px rgba(0, 0 ,0.2);">
+        
+            <div class="cartArticle">
+            <div class="card" style="width: 18em;">
                     <img src="${article.image}" class="card-img-top" id=imgTop alt="...">
                 <div class="cartDate">
                     <i class="bi bi-calendar4"></i>
                     <p>${article.datePublication}</p>
                 </div>
-                <div class="card-body style="width: 12em; height: 50px;box-shadow: 0 0 10px rgba(0, 0 ,0.2); border: solid black 1px">
+                <div class="card-body style="width: 12em; height: 50px; border: solid black 1px">
                     <h5 class="card-title" id= htitre>${article.titre}<h5>
                     <p class="card-text" id=pdiscription>${article.description}</p>
                     <button class="voirplus" id="popupButton${article.id}">${article.button}</button>
         <div id="popup${article.id}" class="popup${article.id}">
             <div class="popup-content">
                 <span class="close" id="closePopup${article.id}">&times;</span>
-                <h2></h2>
-                <!-- <p>Contenu de votre popup.</p> -->
-                <div class="divContainDArticle">
+                        <span class="close" id="closePopup${article.id}">&times;</span>
+                        <h2></h2>
+                        <!-- <p>Contenu de votre popup.</p> -->
+                        <div class="divContainDArticle">
                     <div class="divDetailArticles">
                         <h4>Qu’est-ce que le certificat ISTQB ?</h4>
                         <iframe width="450" height="450" src="https://www.youtube.com/embed/A7WMRcBAhFQ" title="Certification ISTQB FOUNDATION : C’est quoi ISTQB ?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -208,7 +226,7 @@
                                 </div>
                             <div class="divComtext">
                                 <p>
-                                    🌐 Rejoignez un groupe de professionnels dynamiques, tous animés par la volonté d'avoir un impact significatif dans leur domaine. 🔥🔥🔥🔥 Vous êtes CHOC!!!
+                                    🌐 merci à vous 🔥🔥🔥🔥 Vous êtes CHOC!!!
                                 </p>
                             </div>
                             </div>
@@ -265,13 +283,9 @@
                                     <label for="exampleInputEmail1" class="form-label">Addresse email</label>
                                     <input type="email" class="form-control bg-dark-subtle" id="exampleInputEmail1" aria-describedby="emailHelp">
                                 </div>
-                                <!-- <div class="mb-3">
-                                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1">
-                                </div> -->
                                 <div class="form-floating">
                                     <label for="floatingTextarea2"  aria-placeholder="Commenter"> votre commentaire</label>
-                                    <textarea  class="form-control w-100 bg-dark-subtle" id="floatingTextarea2" style="height: 75px; "  placeholder="Commenter"></textarea>
+                                    <textarea  class="form-control w-100 bg-dark-subtle" id="floatingTextarea2" style="height: 45px;  width: 370px;"  placeholder="Commenter"></textarea>
                                 </div>
                                 <div class="mb- form-check">
                                     <input type="checkbox" class="form-check-input bg-dark-subtle m-2" id="exampleCheck1">
@@ -283,34 +297,28 @@
                                 color: #fff; width: 75px; height: 35px; margin-bottom: 5px; margin-top: 5px;">Envoyer</button>
                             </form>
                         </div>
-
                     </div>
 
+
+
+
+
+
+                    </div>    
                 </div>
-            </div>
-        </div>
-                    
-                </div>
-            </div>
-        </div>
             `
             //ajouter l'element dans le conteneur parent articleItems
             articleItems.appendChild(articleItem)
         });
 
-
-
-
     </script>
-
-    <div id="footer"></div>
     <script src="../public/scripts.js"></script>
     <script>
         for (let index = 1; index < articles.length; index++) {
              // Récupérez le bouton et le popup
         var popupButton = document.getElementById(`popupButton${index}`);
         var popup = document.getElementById(`popup${index}`);
-        var closePopup = document.getElementById(`closePopup${index}`   );
+        var closePopup = document.getElementById(`closePopup${index}`);
         
         // Affichez le popup quand le bouton est cliqué
         popupButton.addEventListener("click", function() {
@@ -324,6 +332,26 @@
             
         }
     </script>
-    </section>
+
+    <script>
+    // script.js
+    const searchInput = document.getElementById("searchInput");
+    const itemsList = document.getElementById("itemsList");
+    const items = itemsList.getElementsByTagName("li");
+    
+    searchInput.addEventListener("input", function() {
+        const searchTerm = searchInput.value.toLowerCase();
+    
+        for (const item of items) {
+            const text = item.textContent.toLowerCase();
+            if (text.includes(searchTerm)) {
+                item.style.display = "block";
+            } else {
+                item.style.display = "none";
+            }
+        }
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
