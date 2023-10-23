@@ -31,7 +31,7 @@
     color: var(--baseColor);
     font-weight: var(--titreSectionGraisse);
     font-size: 45px;
-    z-index:100;
+    z-index:90;
 }
 :root {
     --baseColor : #E45923;
