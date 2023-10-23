@@ -14,7 +14,7 @@ const footer = document.getElementById('footer');
 // console.log(basePath);
 
 const uri = document.body.baseURI;
-const val = uri.search(/-main/);
+const val = uri.search(/G2/);
 const root = uri.slice(0, (val + 2));
 
 //injecter le code du header
